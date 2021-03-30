@@ -115,7 +115,7 @@ To train the model, I used the Adam optimizer because it faster convergence and 
 
 My final architecture is a relatively shallow network made by 4 layers. The first two layers are convolutional, while the third and last are fully connected. Following [Sermanet, LeCun](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf) the output of both the first and second convolutional layers are concatenated and fed to the following dense layer. In this way we provide the fully-connected layer visual patterns at both different levels of abstraction. The last fully-connected layer then maps the prediction into one of the 43 classes.
 
-To get additional data, I use the `ImageDataGenerato` class provided in the Keras library so that I can make the data augmentation online. In this way, images are randomly rotated, zoomed and shifted in a narrow range, thus creating some variety in the data.
+To get additional data, I use the `ImageDataGenerator` class provided in the Keras library so that I can make the data augmentation online. In this way, images are randomly rotated, zoomed and shifted in a narrow range, thus creating some variety in the data.
 
 My final model results were:
 * training set accuracy of 0.997
